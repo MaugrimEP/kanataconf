@@ -1,0 +1,22 @@
+(defsrc
+  caps
+  d f h j k l
+)
+
+(deflayer default
+  @cap
+  @d @f h @j @k l
+)
+
+(deflayer arrows
+  _ 
+  _ _  left down up rght
+)
+
+(defalias
+  cap (tap-hold-release 200 200 caps (layer-toggle arrows))
+  d   (tap-hold-release 200 200 d lsft)
+  f   (tap-hold-release 200 200 f lctl)
+  j   (tap-hold-release 200 200 j lctl)
+  k   (tap-hold-release 200 200 k rsft)
+)
